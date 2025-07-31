@@ -31,19 +31,20 @@ function App() {
 
   return (
     <div className="chat-container">
-      <h1>ChatGPT React</h1>
+      <h1>AI Chat</h1>
       <div className="chat-box">
         {messages.map((msg, idx) => (
           <div
             key={idx}
             className={`message ${msg.role === "user" ? "user" : "assistant"}`}
           >
-            <strong>{msg.role === "user" ? "Tú" : "AI"}:</strong> {msg.content}
+            {msg.content}
           </div>
         ))}
       </div>
       <div className="input-area">
         <input
+          className="chat-input"
           type="text"
           value={input}
           placeholder="Escribe tu mensaje..."
