@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="chat-container">
-      <h1>AI Chat</h1>
+      <h1>IA CHAT</h1>
       <div className="chat-box">
         {messages.map((msg, idx) => (
           <div
@@ -47,7 +47,7 @@ function App() {
           className="chat-input"
           type="text"
           value={input}
-          placeholder="Escribe tu mensaje..."
+          placeholder="Envía un mensaje..."
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
