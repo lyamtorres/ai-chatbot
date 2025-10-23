@@ -1,4 +1,4 @@
-# AI Chatbot (React + Node.js + OpenAI)
+# Raphaël, AI Chatbot
 
 This project is a simple AI chatbot web application built with a React frontend and a Node.js (Express) backend. It uses the OpenAI API to generate responses, providing a conversational interface similar to ChatGPT.
 
