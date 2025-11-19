@@ -1,84 +1,75 @@
-# Raphaël, AI Chatbot
+# NeoChat – Conversational AI
 
-This project is a simple AI chatbot web application built with a React frontend and a Node.js (Express) backend. It uses the OpenAI API to generate responses, providing a conversational interface similar to ChatGPT.
+NeoChat is a modern AI chatbot web application featuring a sleek React frontend and a Node.js (Express) backend. Powered by the OpenAI API, it delivers a conversational experience similar to ChatGPT, with real-time chat, conversation history, and model selection.
 
-![social-preview](https://github.com/lyamtorres/ai-chatbot/blob/main/social-preview.png)
+![App Interface](./app-interface.png)
 
-## Features
+## ✨ Features
 
-- Modern React frontend (with Vite)
-- Express backend API
-- Integration with OpenAI's GPT models
 - Real-time chat interface
+- Conversation history panel
+- Model selection (NeoChat Pro, NeoChat Lite)
+- Quick action buttons for common tasks
+- Modern, responsive UI
+- Integration with OpenAI's GPT models
+- Fast and lightweight (Vite + React)
 
-## Getting Started
+## 🛠️ Technologies
 
-Follow these steps to run the project locally:
+- React (TypeScript)
+- Vite
+- Node.js (Express)
+- OpenAI API
 
-### 1. Clone the Repository
+## 🗂️ Project Structure
 
-```sh
+- `client/` — Frontend React app (TypeScript, Vite)
+- `server/` — Express backend API
+- `public/` — Static assets
+- `README.md` — Project documentation
+
+## 📦 Requirements
+
+- Node.js (v18+ recommended)
+- OpenAI API key
+- Any editor (VS Code recommended)
+
+## 🚀 Running the Project
+
+```bash
+# 1. Clone the repository
 git clone https://github.com/lyamtorres/ai-chatbot.git
 cd ai-chatbot
+
+# 2. Set up the backend
+cd server
+npm install
+cp .env.example .env
+# Add your OpenAI API key to .env
+npm start
+# Backend runs at http://localhost:3000
+
+# 3. Set up the frontend (in a new terminal)
+cd ../client
+npm install
+npm run dev
+# Frontend runs at http://localhost:5173
 ```
 
-### 2. Set Up the Backend
+## 🎯 Purpose
 
-1. Go to the backend folder:
+NeoChat provides a simple, extensible environment for experimenting with conversational AI, modern frontend development, and API integration. It’s ideal for learning about:
 
-    ```sh
-    cd backend
-    ```
+- Building chat UIs with React
+- Connecting to AI APIs (OpenAI)
+- Structuring full-stack JavaScript projects
 
-2. Install dependencies:
+## 📸 App Interface
 
-    ```sh
-    npm install
-    ```
+The interface is designed for clarity and ease of use:
 
-3. Create a `.env` file based on the provided example:
+- Conversation history on the left
+- Model selection below history
+- Main chat area with message input and quick actions
 
-    ```sh
-    cp .env.example .env
-    ```
-
-4. Add your OpenAI API key to the `.env` file:
-
-    ```
-    OPENAI_API_KEY=your_openai_api_key_here
-    ```
-
-5. Start the backend server:
-
-    ```sh
-    npm start
-    ```
-
-   The backend will run at [http://localhost:3000](http://localhost:3000).
-
-### 3. Set Up the Frontend
-
-1. Open a new terminal and go to the frontend folder:
-
-    ```sh
-    cd frontend
-    ```
-
-2. Install dependencies:
-
-    ```sh
-    npm install
-    ```
-
-3. Start the frontend development server:
-
-    ```sh
-    npm run dev
-    ```
-
-   The frontend will run at [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
-
-### 4. Usage
-
-- Open [http://localhost:5173](http://localhost:5173) in your browser.
-- Type a message and interact with the AI chatbot!
+Refer to the `app-interface` file for more details about the UI implementation and structure.
