@@ -2,7 +2,7 @@
 
 NeoChat is a modern AI chatbot web application featuring a sleek React frontend and a Node.js (Express) backend. Powered by the OpenAI API, it delivers a conversational experience similar to ChatGPT, with real-time chat, conversation history, and model selection.
 
-![App Interface](./app-interface.png)
+![App Interface](client/src/assets/app-interface.png)
 
 ## ✨ Features
 
