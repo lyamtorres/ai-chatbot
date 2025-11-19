@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="chat-container">
-      <h1>IA CHAT</h1>
+      <h1>Raphaël</h1>
       <div className="chat-box">
         {messages.map((msg, idx) => (
           <div
